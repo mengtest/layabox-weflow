@@ -30,3 +30,5 @@ gulp.task('ui', function () {
     .pipe(gulp.dest('bin/build'))
     .pipe(notify({ message: 'js task ok' }));
 });
+
+gulp.task('default',['libs', 'js', 'ui']);
